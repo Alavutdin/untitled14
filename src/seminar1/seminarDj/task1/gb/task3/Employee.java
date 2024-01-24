@@ -5,33 +5,65 @@ import java.time.LocalDate;
 import java.time.Period;
 
 public class Employee {
-    private String FIO;
-    private String position;
-    private String phone;
-    private BigDecimal salary;
-    private LocalDate birthDate;
+    private String name;
+    private double salary;
+    private int age;
 
-    public Employee(String ivan_petrov, String devops, String s, BigDecimal valueOf, LocalDate of) {
+    /**
+     * Конструктор сотрудника.
+     *
+     * @param name   Имя сотрудника
+     * @param salary Зарплата сотрудника
+     */
+    public Employee(String name, double salary, int age) {
+        this.name = name;
+        this.salary = salary;
+        this.age = age;
     }
 
-
-    public int getAge() {
-        LocalDate currentDate = LocalDate.now();
-        return Period.between(birthDate, currentDate).getYears();
+    /**
+     * Получить имя сотрудника.
+     *
+     * @return Имя сотрудника
+     */
+    public String getName() {
+        return name;
     }
 
-//    @Override
-//    public String toString() {
-//
-//        return String.format("%s - %s , phone - %s ,salary - %s, age - %s", FIO, position, phone, salary, this.getAge());
-//    }
-
-    public void printInfo() {
-        System.out.println(this);
+    /**
+     * Получить зарплату сотрудника.
+     *
+     * @return Зарплата сотрудника
+     */
+    public double getSalary() {
+        return salary;
+    }
+    /**
+     * Получить возраст сотрудника.
+     *
+     * @return возраст сотрудника
+     */
+    public double getAge() {
+        return age;
     }
 
-    public void increaseSalary(int value) {
-        this.salary = salary.add(BigDecimal.valueOf(value));
+    /**
+     * Повысить зарплату сотрудника.
+     *
+     * @param amount Сумма повышения
+     */
+    public void increaseSalary(double amount) {
+        salary += amount;
     }
 
+    /**
+     * Переопределение метода toString().
+     *
+     * @return Строковое представление сотрудника
+     */
+    @Override
+    public String toString() {
+        return String.format("Employee { name= '%s', , salary= %s, age %s }",name,salary,age);
+
+    }
 }
