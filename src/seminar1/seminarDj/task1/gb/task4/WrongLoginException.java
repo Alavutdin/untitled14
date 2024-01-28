@@ -1,0 +1,10 @@
+package seminar1.seminarDj.task1.gb.task4;
+
+public class WrongLoginException extends Exception {
+    public WrongLoginException() {
+    }
+
+    public WrongLoginException(String message) {
+        super(message);
+    }
+}
