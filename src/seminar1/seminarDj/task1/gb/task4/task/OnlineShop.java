@@ -1,5 +1,8 @@
 package seminar1.seminarDj.task1.gb.task4.task;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class OnlineShop {
     private static List<Customer> customerList = new ArrayList<>();
     private static List<Product> productList = new ArrayList<>();
