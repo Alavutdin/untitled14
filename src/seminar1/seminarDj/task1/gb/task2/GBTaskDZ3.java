@@ -1,4 +1,4 @@
-package seminar1.seminarDj.task1.gb;
+package seminar1.seminarDj.task1.gb.task2;
 //Написать функцию, возвращающую истину, если в переданном массиве есть два
 //соседних элемента, с нулевым значением.
 public class GBTaskDZ3 {

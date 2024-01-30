@@ -1,4 +1,4 @@
-package seminar1.seminarDj.task1.gb;
+package seminar1.seminarDj.task1.gb.task2;
 //Написать функцию, возвращающую разницу между самым большим и самым маленьким элементами
 // переданного не пустого массива.
 

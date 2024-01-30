@@ -1,4 +1,4 @@
-package seminar1.seminarDj.task1.gb;
+package seminar1.seminarDj.task1.gb.task2;
 //1. Написать метод, возвращающий количество чётных элементов массива.
 public class GBTaskDZ1 {
     public static void main(String[] args) {

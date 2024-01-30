@@ -1,4 +1,4 @@
-package seminar1.seminarDj.task1.gb;
+package seminar1.seminarDj.task1.gb.task2;
 import java.util.Arrays;
 import java.util.function.Function;
 

@@ -1,4 +1,4 @@
-package seminar1.seminarDj.task1.gb;
+package seminar1.seminarDj.task1.gb.task2;
 // Требуется написать метод, принимающий на вход размеры двумерного массива и выводящий массив
 // в виде инкременированной цепочки чисел, идущих по спирали.
 public class GBTaskDZ4 {
